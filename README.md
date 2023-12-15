@@ -104,12 +104,28 @@ Answer to question 8:  <br/>
 <img src="https://imgur.com/fI2TsTs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-Answer to question 7:  <br/>
-<img src="https://imgur.com/46Dfzw4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Question 9:  <br/>
+From the context info field the encoded powershell script can be found
+<img src="https://imgur.com/jjflYLU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
+Question 9 :  <br/>
+Using cyberchef i am able to decode the encoded powershell script from base64, a closer look shows a script that ends with news.php
+which gives a major clue
+<img src="https://imgur.com/mUpkWKA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
+The string is then converted from base64 which shows a url:  <br/>
+<img src="https://imgur.com/JbdmKR3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
+The url is then converted into a format acceptable by the question using defang url:  <br/>
+<img src="https://imgur.com/WFY6p2M.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Answer to question 9:  <br/>
+<img src="https://imgur.com/N58SJTK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
 <!--
  ```diff
